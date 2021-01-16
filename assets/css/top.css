@@ -1,0 +1,279 @@
+@charset "UTF-8";
+
+/** main slider */
+/**************************************/
+
+#main-visual {
+  padding-bottom: 50px;
+}
+
+#top-slider-wrap {
+  border-bottom: 1px solid #b4b4b4;
+}
+
+#top-slider {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#top-slider .slide-item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#top-slider .slide-item-inner {
+  display: flex;
+  align-items: center;
+}
+
+.top-slider-img {
+  width: 66%;
+}
+
+.top-slider-title {
+  width: 34%;
+  padding: 0 3%;
+}
+
+.top-slider-title p {
+  margin: 0;
+  padding-top: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.top-slider-title h3 {
+  margin: 0;
+  padding: 1.4em 0;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+@media all and (min-width: 768px) {
+  .top-slider-title .btn {
+    font-size: 15px;
+    min-width: 185px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .top-slider-title h3 {
+    font-size: 22px;
+  }
+
+  .top-slider-title h3 br {
+    display: none;
+  }
+
+  .top-slider-title p {
+    font-size: 16px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #top-slider .slide-item-inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top-slider-img {
+    width: auto;
+  }
+
+  .top-slider-title {
+    width: auto;
+    min-height: 220px;
+    text-align: center;
+  }
+
+  .top-slider-title h3 {
+    padding: 1em 0;
+    font-size: 20px;
+  }
+
+  .top-slider-title p {
+    padding-top: 1em;
+    font-size: 14px;
+  }
+}
+
+#topbanner {
+  padding-bottom: 50px;
+}
+
+#topbanner .slick-slide {
+  transition: 0.3s ease;
+}
+
+#topbanner .slick-slide:not(.slick-current) {
+  opacity: 0.6;
+}
+
+/** サポート */
+/**************************************/
+
+.support-item {
+  margin-bottom: 25px;
+}
+
+.support-item h3 a {
+  text-decoration: none;
+}
+
+.support-item h3 a:hover {
+  text-decoration: underline;
+}
+
+@media all and (max-width: 414px) {
+  .support-item {
+    width: 263px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.top-feature .top-feature-item {
+  position: relative;
+}
+
+.top-feature > div:not(:last-child):after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: #ebecf1;
+  display: block;
+  content: "";
+  border-right: #ebecf1 1px solid;
+}
+
+.top-feature .top-feature-item p {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.top-feature .number {
+  display: block;
+  font-size: 7rem;
+  line-height: 85px;
+  color: #d5141b;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: -0.05em;
+}
+
+.top-feature .top-feature-item i {
+  margin-bottom: 35px;
+  display: inline-block;
+  height: 75px;
+  text-align: center;
+}
+
+.top-feature .top-feature-item i img {
+  width: auto;
+
+  height: 100%;
+}
+
+@media all and (max-width: 767px) {
+  .top-feature .number {
+    font-size: 4rem;
+    line-height: 65px;
+  }
+
+  .top-feature .top-feature-item i {
+    height: 45px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .top-feature .top-feature-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .top-feature > div:not(:last-child) {
+    border-bottom: 1px #ebecf1 solid;
+    margin-bottom: 20px;
+  }
+
+  .top-feature > div:not(:last-child):after {
+    content: none;
+  }
+
+  .top-feature .top-feature-item i {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .top-feature .top-feature-item p {
+    width: 120px;
+  }
+
+  .top-feature .number {
+    line-height: 50px;
+  }
+}
+
+/** 講師陣 */
+/**************************************/
+#top-lecturer-wrap {
+  padding-bottom: 50px;
+}
+
+#slide-lecturer {
+  margin-bottom: 0;
+}
+
+.lecturer-item .desc {
+  min-height: 7.5em;
+}
+
+@media all and (max-width: 499px) {
+  .lecturer-item .desc {
+    min-height: 5.5em;
+  }
+}
+
+/** 受講生の声 */
+/**************************************/
+.top-voice-item .txt-wrap {
+  padding: 0 2em 2em;
+}
+
+@media all and (min-width: 768px) {
+  .top-voice > div {
+    border: 1px solid #ebecf1;
+  }
+
+  .top-voice > div:first-child {
+    border-right: 0;
+  }
+
+  .top-voice-item2 {
+    border-right: 1px solid #ebecf1;
+  }
+
+  .top-voice-item2,
+  .top-voice-item3 {
+    border-bottom: 1px solid #ebecf1;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .top-voice [class^="col-"] {
+    border: none;
+  }
+
+  .top-voice {
+    border-top: 1px solid #ebecf1;
+  }
+  .top-voice-item {
+    border: 1px solid #ebecf1;
+    border-top: 0;
+  }
+}
